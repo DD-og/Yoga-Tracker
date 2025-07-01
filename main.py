@@ -231,7 +231,7 @@ def generate_analysis(before_data, after_data, client_info):
     
     response = groq_client.chat.completions.create(
         messages=[{"role": "user", "content": prompt}],
-        model="llama-3.3-70b-versatile",
+        model="meta-llama/llama-4-maverick-17b-128e-instruct",
         temperature=0.7,
         max_tokens=3000,
         top_p=0.95,
@@ -370,7 +370,7 @@ def generate_dietary_plan(client_info, before_data, after_data):
     
     response = groq_client.chat.completions.create(
         messages=[{"role": "user", "content": prompt}],
-        model="llama-3.3-70b-versatile",
+        model="meta-llama/llama-4-maverick-17b-128e-instruct",
         temperature=0.7,
         max_tokens=3000,
         top_p=0.95,
